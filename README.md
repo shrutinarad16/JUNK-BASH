@@ -45,3 +45,9 @@ will be **rewarded** some money. This money is gained from **Margin accomplished
 20) Toggle Language
 21) **No intermediate site**s like amazon, flipkart. User and Admin can directly communicate for buying and selling purposes.
 
+## Tech Stack
+1) Frontend: HTML, CSS, Javascript
+2) Backend: Node.js, Express.js, MongoDB, Cloudnary
+3) Design: Figma
+4) Security: Blockchain
+

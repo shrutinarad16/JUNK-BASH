@@ -27,11 +27,11 @@ these challenges and create opportunities for small enterprises while preserving
 ## Novelty that makes our Website different from others
 1) One District One Product specifies the specialty of each district that **arranges the products from top to bottom according to fame in area**.
 2) Home Screen poses **videos** that depicts **hard work and dedication of workers** for their product where their product is symbol of heritage and culture.
-3) **Negotiation** for best dealing.
+3) Website **service** is available **all over INDIA** for selling and buying products.
 4) Exhibition Display.
 5) User Friendly UI and Navigations.
-6) Website **service** is available **all over INDIA** for selling and buying products.
-7) Money Transfer can be done with UPI or **Blockchain** based Currencies.
+6) Money Transfer can be done with UPI or **Blockchain** based Currencies.
+7) **Negotiation** for best dealing.
 8) **BlockChain ensures the remedy from Fraud.** (In case any scam happened by Dealer or Customer; it will hammer penalty on Scammer by 15% of Original Price of Product.
 9) **Satisfaction** will reflects in terms of darkening of Green Light on **Profile** while Scamming will reflects in terms of darkening of Red Light on Profile. This will builds trust and strong bond between Costumers and Dealers.
 10) Privacy and Security is on top priority. Displaying number and Personal Information will be private or public is upto on user.

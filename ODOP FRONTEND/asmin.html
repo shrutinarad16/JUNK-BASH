@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Portal</title>
+  <link rel="stylesheet" href="admin.css">
+  <style>
+    /* Updated CSS for product image upload */
+    input[type="file"] {
+      display: none;
+    }
+
+    label.upload-button {
+      padding: 8px 16px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      display: inline-block;
+    }
+    header img.logo {
+    max-width: 200px; /* Set the maximum width for the logo */
+    max-height: 300px; /* Set the maximum height for the logo */
+}
+
+    /* Rest of the CSS (you can use the previous CSS for the rest of the styles) */
+  </style>
+  <script src="admin.js"></script>
+</head>
+<header>
+    <img src="img/ONE DISTRICT ONE PRODUCT transsp big.png" alt="logo" class="logo">
+  <h3>Admin Portal - ODOP</h3>
+</header>
+<body>
+  <main>
+    <nav>
+      <!-- Settings Dropdown -->
+      <div class="dropdown">
+        <button class="dropbtn">Settings</button>
+        <div class="dropdown-content">
+          <a href="#">Product Management</a>
+          <a href="profilepage.html">My Profile</a>
+          <a href="#">Customer Requests</a>
+          <a href="negotiation.html">Negotiation Section</a>
+          <a href="notification.html">Notifications</a>
+          <a href="logged.html">Logout</a>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <h2>Products</h2>
+      <table id="productsTable"></table>
+      <table>
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Actions</th>
+            <th>Image</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Product 1</td>
+            <td>This is a product description.</td>
+            <td>$100</td>
+            <td>
+              <a href="#" data-action="edit" data-product-name="Product 1">Edit</a> |
+              <a href="#" data-action="delete" data-product-name="Product 1">Delete</a>
+            </td>
+            <td>
+              <img src="" alt="Product Image" id="productImage1">
+              <input type="file" id="uploadImage1" accept="image/*" style="display: none;">
+              <label for="uploadImage1" class="upload-button">Upload Image</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Product 2</td>
+            <td>This is another product description.</td>
+            <td>$200</td>
+            <td>
+              <a href="#" data-action="edit" data-product-name="Product 2">Edit</a> |
+              <a href="#" data-action="delete" data-product-name="Product 2">Delete</a>
+            </td>
+            <td>
+              <img src="" alt="Product Image" id="productImage2">
+              <input type="file" id="uploadImage2" accept="image/*" style="display: none;">
+              <label for="uploadImage2" class="upload-button">Upload Image</label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="#" id="addProduct" class="button">Add New Product</a>
+    </section>
+    <!-- ... (same as previous HTML) ... -->
+  </main>
+  <footer>
+    &copy; 2023 Admin Portal
+  </footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+    "faqProduct": "FAQ about Product",
+    "faqProductQuestion1": "Q: What is this product?",
+    "faqProductAnswer1": "A: This product is...",
+    "faqProductQuestion2": "Q: How is it made?",
+    "faqProductAnswer2": "A: It is made using...",
+    "footerText": "&copy; 2023 Government of Jammu & Kashmir. All Rights Reserved.",
+    "governmentDetails": {
+        "label": "Government of Jammu and Kashmir",
+        "address": "Address: Jammu & Srinagar",
+        "email": "Email: info@jkgovt.gov.in"
+    }
+}

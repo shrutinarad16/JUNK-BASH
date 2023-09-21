@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODOP J&K Login Portal</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('img/kkl.jpg');
+            background-size: cover;
+    background-position: center;
+    /* background-color: #f5f5f5; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+        }
+
+        /* Full-screen container */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            padding: 0 20px;
+        }
+
+        /* Login sections */
+        .login-section {
+            flex: 1;
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+
+        /* Style for login buttons */
+        .login-button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #0a0a0a;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Scale-up and color change on hover */
+        .login-section:hover {
+            transform: scale(1.05);
+            background-color: #007BFF;
+        }
+
+        .login-button:hover {
+            background-color: #f8e806;
+        }
+
+        /* Responsive CSS for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .login-section {
+                flex: auto;
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-section">
+            <h2>Login as Vendor</h2>
+            <p>Welcome, vendors! Please click below to login:</p>
+            <a href="login.html" class="login-button">Login as Vendor</a>
+        </div>
+        <div class="login-section">
+            <h2>Login as Customer</h2>
+            <p>Hello, customers! Please click below to login:</p>
+            <a href="login.html" class="login-button">Login as Customer</a>
+        </div>
+    </div>
+</body>
+</html>

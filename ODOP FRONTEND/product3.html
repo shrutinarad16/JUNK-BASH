@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #e2cd91;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+
+        }
+        header img.logo {
+    max-width: 200px; /* Set the maximum width for the logo */
+    max-height: 250px; /* Set the maximum height for the logo */
+}
+
+        /* Product Container */
+        .product-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Product Image */
+        .product-image {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Product Details */
+        .product-details {
+            padding: 20px;
+        }
+
+        .product-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .product-price {
+            font-size: 20px;
+            color: #ff5e3a;
+            margin-bottom: 10px;
+        }
+
+        /* Delivery and Buttons */
+        .delivery-buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            border-top: 1px solid #ccc;
+        }
+
+        .pincode-section {
+            flex: 1;
+            text-align: center;
+        }
+
+        .pincode-input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .check-delivery-button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .action-buttons {
+            flex: 1;
+            text-align: center;
+        }
+
+        .buy-button,
+        .wishlist-button {
+            padding: 10px 20px;
+            background-color: #ff5e3a;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .buy-button:hover,
+        .wishlist-button:hover,
+        .check-delivery-button:hover {
+            background-color: #f56f3a;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .product-image,
+            .product-details,
+            .delivery-buttons-container {
+                padding: 10px;
+            }
+
+            .delivery-buttons-container {
+                flex-direction: column;
+            }
+
+            .action-buttons {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/ONE DISTRICT ONE PRODUCT transsp big.png" alt="logo" class="logo">
+    </header>
+
+    <div class="product-container">
+        <div class="product-image">
+            <img src="img/k6.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+            <h2 class="product-title">Kashmiri Embroidery</h2>
+            <p class="product-description">
+                Kashmiri embroidery, renowned worldwide for its exquisite craftsmanship and intricate designs, is a testament to the rich cultural heritage of the Kashmir Valley in India. Rooted in centuries of tradition, this art form has found its way into contemporary fashion, making it a coveted choice for those seeking elegance and style. Allow us to introduce you to the world of Kashmiri embroidery, where every stitch tells a story. Kashmiri embroidery, also known as "Kashida" or "Kashmiri Tilla," has a history that spans over 2,000 years. It has been passed down through generations, with skilled artisans mastering the art from a young age. This heritage-rich craft is deeply intertwined with the culture and identity of the Kashmiri people.
+
+
+            </p>
+            <div class="product-price">Price: 999</div>
+        </div>
+        <div class="delivery-buttons-container">
+            <div class="pincode-section">
+                <input type="text" class="pincode-input" placeholder="Enter Pincode">
+                <button class="check-delivery-button">Check Delivery</button>
+            </div>
+            <div class="action-buttons">
+                <button class="buy-button" onclick="location.href='add_to_cart.html'">Buy Now</button>
+                <button class="wishlist-button">Add to Wishlist</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+    document.addEventListener("DOMContentLoaded", function () {
+        const checkDeliveryButton = document.querySelector(".check-delivery-button");
+        const pincodeInput = document.querySelector(".pincode-input");
+        const deliveryMessage = document.createElement("p");
+
+        // Function to check if delivery is available for the entered pincode
+        function checkDeliveryAvailability() {
+            const enteredPincode = pincodeInput.value;
+            // Replace this with your logic to check delivery availability
+            const isDeliveryAvailable = checkDelivery(enteredPincode);
+
+            deliveryMessage.textContent = isDeliveryAvailable
+                ? "Delivery is available for this pincode."
+                : "Sorry, delivery is not available for this pincode.";
+            
+            deliveryMessage.classList.add("delivery-message");
+            pincodeInput.insertAdjacentElement("afterend", deliveryMessage);
+        }
+
+        // Add click event listener to the "Check Delivery" button
+        checkDeliveryButton.addEventListener("click", checkDeliveryAvailability);
+
+        // Replace this function with your actual logic to check delivery
+        function checkDelivery(pincode) {
+            // Example logic - Delivery available for even pin codes
+            return parseInt(pincode) % 2 === 0;
+        }
+    });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+    "faqProduct": "उत्पाद के बारे में अक्सर पूछे जाने वाले प्रश्न",
+    "faqProductQuestion1": "प: यह क्या उत्पाद है?",
+    "faqProductAnswer1": "उ: यह उत्पाद ...",
+    "faqProductQuestion2": "प: यह कैसे बनता है?",
+    "faqProductAnswer2": "उ: इसका निर्माण ...",
+    "footerText": "&copy; 2023 जम्मू और कश्मीर सरकार। सर्वाधिकार सुरक्षित।",
+    "governmentDetails": {
+        "label": "जम्मू और कश्मीर सरकार",
+        "address": "पता: जम्मू और श्रीनगर",
+        "email": "ईमेल: info@jkgovt.gov.in"
+    }
+}
+ 

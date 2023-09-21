@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+xp7eVBW8me4PGt3U6nOFO0+r5TqLLsF7C5m9xOW+7FXQF7j" crossorigin="anonymous">
+
+    <title>ODOP Jammu and Kashmir</title>
+</head>
+    <header>
+        <div class="header-container">
+            <!-- <div class="header-logo">
+                <a href="#">Your Logo</a>
+            </div> -->
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tender</a></li>
+                    <li><a href="#poroga">Media</a></li>
+                    <li><a href="#distro" id="product-link">Selected Products</a></li>
+                    <li><a href="#">Complaint</a></li>
+                    <li><a href="#contact" id="contact-link">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-buttons">
+                <button class="button login-button" onclick="location.href='loginlanding.html' ">Login</button>
+                <button id="language-toggle-button">Toggle Language</button>
+            </div>
+        </div>
+    </header>
+<body>
+    <div class="header-logo">
+        <img src="img/DI2.png" alt="ODOP Logo">
+        <img src="img/19.png" alt="ODOP Logo">
+        <img src="img/Make in india transp.png" alt="ODOP Logo">
+        <img src="img/18.png" alt="ODOP Logo">
+        <img src="img/ONE DISTRICT ONE PRODUCT transsp big.png" alt="ODOP Logo">
+        <img src="img/MOE.png" alt="ODOP Logo">
+        <img src="img/ODOP1.png" alt="ODOP Logo">
+        <img src="img/G20.png" alt="ODOP Logo">
+        <img src="img/Seal_of_Jammu_and_Kashmir_color.png" alt="ODOP Logo">
+    </div>
+    <div class="alert-section">
+        <div class="alert-container">
+            <marquee> <p class="alert-message">Welcome to the official website of <span class="styled-word">One-District One-Product J&K</span> : Important Notification: Read our new government policy : REF/0023/2023/00978 <a href="#"> here</a>.</p></marquee>
+            <button class="close-alert" onclick="closeAlert()">Close</button>
+        </div>
+    </div>
+
+    <div class="banner-section">
+        <div class="banner-slider">
+            <div class="banner-slide">
+                <img src="img/jandk hindii.jpg" alt="Banner 3">
+            </div>
+            <div class="banner-slide">
+                <img src="img/J&K INTERNATIONAL banner 2.jpg" alt="Banner 1">
+            </div>
+            <div class="banner-slide">
+                <img src="img/J&K INTERNATIONAL Exhibition banner.jpg" alt="Banner 2">
+            </div>
+            <div class="banner-slide">
+                <img src="img/AzadikaAmrut-WebBanner.jpg" alt="Banner 3">
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev-slide" onclick="prevSlide()">&#10094;</button>
+            <button class="next-slide" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+</div>
+    <div class="container">
+
+        <div class="filter">
+            <select>
+                <option value="">Filter by Cost</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <select>
+                <option value="">Filter by Material</option>
+                <option value="cotton">Cotton</option>
+                <option value="silk">Silk</option>
+                <option value="wool">Wool</option>
+            </select>
+            <button class="apply-button">Apply</button>
+        </div>
+        <div class="odop-section">
+            <h2 class="section-heading">Welcome to the Official Website - <span class="styled-word">One</span> <span class="styled-word2">District-One</span> <span class="styled-word3">Product</span></h2>
+
+            <br>
+            <video width="320" height="240" controls autoplay>
+                <source src="img/WhatsApp Video 2023-09-18 at 15.37.06.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <br>
+            <p>The J&K Government’s One District-One Product Programme aims to encourage such indigenous and specialized products and crafts in J&K that are found nowhere else – like the ancient and nutritious 'Kala Namak' rice, the rare and intriguing wheat-stalk craft, world-famous chikankari and zari-zardozi work on clothes, and the intricate and stunning horn-bone work that uses the remains of dead animals rather than live ones, a nature-friendly replacement for ivory.</p>
+            <br>
+            <button class="read-more-button">Read More</button>
+        </div>
+<br>
+<br>
+<section id="distro">
+<h2 class="poronews">Jammu & Kashmir Districts</h2>
+    <div class="districts-container">
+        <!-- District 1 -->
+        <div class="district" onclick="location.href='district1.html'">
+            <img src="img/ps4.png" alt="District 1 Image">
+            <h2>Leh District</h2>
+            <p>Leh, in Ladakh, is famous for its <span class="ps">Pashmina shawls</span> made from the fine wool of Pashmina goats. These shawls are renowned for their softness and warmth.</p>
+        </div>
+
+        <!-- District 2 -->
+        <div class="district" onclick="location.href='district2.html'">
+            <img src="img/Saffron-PNG.png" alt="District 2 Image">
+            <h2>Srinagar District</h2>
+            <p>Saffron is a valuable spice known for its vibrant color and distinct flavor. Srinagar, in the Kashmir Valley, is famous for producing high-quality saffron.</p>
+        </div>
+
+        <!-- District 3 -->
+        <div class="district" onclick="location.href='district3.html'">
+            <img src="img/pngimg.com - apple_PNG12405.png" alt="District 3 Image">
+            <h2>Pulwama District</h2>
+            <p>Pulwama is known as the "Rice Bowl of Kashmir" and is famous for its delicious apples. Kashmiri apples are highly regarded for their taste and quality.</p>
+        </div>
+
+        <div class="district" onclick="location.href='district3.html'">
+            <img src="img/rice.png" alt="District 3 Image">
+            <h2>Jammu District</h2>
+            <p>Jammu is renowned for its Basmati rice, which is known for its long grains, fragrance, and excellent taste. It's widely used in Indian and international cuisine.</p>
+        </div>
+
+        <div class="district" onclick="location.href='district3.html'">
+            <img src="img/walnut.png" alt="District 3 Image">
+            <h2>Anantnag District</h2>
+            <p>Anantnag is a major walnut-producing region in Jammu and Kashmir. Walnuts from this area are considered some of the finest in the world.</p>
+        </div>
+
+        <div class="district" onclick="location.href='district3.html'">
+            <img src="img/s2.webp" alt="District 3 Image">
+            <h2>Kishtwar District</h2>
+            <p>Kishtwar produces handwoven textiles, including shawls and fabrics, with unique designs and patterns created using traditional weaving techniques.
+            </p>
+        </div>
+
+        <div class="district" onclick="location.href='district3.html'">
+            <img src="img/honey.png" alt="District 3 Image">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Kupwara District</h2>
+            <p>Kupwara is known for its natural honey, which is collected from the pristine forests of the region.</p>
+        </div>
+
+        <div class="district" onclick="location.href='district3.html'">
+            <img src="img/embroi.webp" alt="District 3 Image">
+            <br>
+            <br>
+            <br>
+            <h2>Baramulla District</h2>
+            <p>Baramulla is renowned for crewel embroidery, a traditional Kashmiri embroidery technique used to create beautiful patterns on fabrics like shawls and curtains.</p>
+        </div>
+        <!-- Add more districts as needed -->
+    </div>
+</section>
+    <br>
+
+<h2 class="highlight">District Highlighted Products</h2>
+        <div class="product-card">
+            <img src="img/images.jpeg" alt="Product 1">
+            <div class="product-info">
+                <h3 class="poro">Jammu and Kashmir Carpets</h3>
+                <br>
+                <p>Our exquisite collection of Jammu and Kashmir Carpets is a testament to the rich heritage and craftsmanship of this beautiful region in Northern India. Welcome to the world of unparalleled luxury and artistry – the realm of Jammu and Kashmir Carpets. Nestled in the heart of the breathtaking Kashmir Valley, these carpets are more than just floor coverings; they are a testament to centuries of craftsmanship and tradition. Each Kashmir carpet is a masterpiece meticulously hand-crafted by skilled artisans who have inherited the art of carpet weaving from their forefathers. The process begins with the careful selection of the finest wool or silk, which is then spun into delicate threads. These threads are skillfully dyed using natural pigments to create a rich and vibrant color palette. </p>
+                <h3 class="poro">&#8377 999/-</h3>
+                <br>
+                <div class="buttons">
+                    <button class="button buy-button" onclick="location.href='product1.html'">View Product</button>
+                    <!-- <button class="button negotiate-button" id="negotiate-button" onclick=" ">Negotiate</button> -->
+                </div>
+            </div>
+        </div>
+
+
+        <div class="product-card">
+            <img src="img/ps2.jpg" alt="Product 2">
+            <div class="product-info">
+                <h3 class="poro">Pashmina Shawls</h3>
+                <br>
+                <p> Our Pashmina shawls are made from the finest and softest Pashmina wool, meticulously handpicked from the high-altitude Himalayan goats. This incredibly delicate and lightweight wool is renowned for its exceptional warmth and softness, making it the perfect accessory for any season. Each carpet we offer is a masterpiece of artistry, skillfully handcrafted by local artisans who have honed their craft through generations. Each Pashmina shawl is a work of art in itself. Skilled artisans in Kashmir employ traditional techniques passed down through generations to create intricate patterns, intricate embroidery, and exquisite designs. From delicate floral motifs to geometric patterns, our shawls showcase the finest craftsmanship.</p>
+                <h3 class="poro">&#8377 1500/-</h3>
+                <br>
+                <div class="buttons">
+                    <button class="button buy-button" onclick="location.href='product2.html'">View Product</button>
+                    <!-- <button class="button negotiate-button" id="negotiate-button" onclick="">Negotiate</button> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="img/images (1).jpeg" alt="Product 1">
+            <div class="product-info">
+                <h3 class="poro">Kashmiri Embroidery</h3>
+                <br>
+                <p>Kashmiri embroidery, renowned worldwide for its exquisite craftsmanship and intricate designs, is a testament to the rich cultural heritage of the Kashmir Valley in India. Rooted in centuries of tradition, this art form has found its way into contemporary fashion, making it a coveted choice for those seeking elegance and style. Allow us to introduce you to the world of Kashmiri embroidery, where every stitch tells a story. Kashmiri embroidery, also known as "Kashida" or "Kashmiri Tilla," has a history that spans over 2,000 years. It has been passed down through generations, with skilled artisans mastering the art from a young age. This heritage-rich craft is deeply intertwined with the culture and identity of the Kashmiri people. </p>
+                <h3 class="poro">&#8377 499 - &#8377 1499/-</h3>
+                <br>
+                <div class="buttons">
+                    <button class="button buy-button" onclick="location.href='product3.html'">View Product</button>
+                    <!-- <button class="button negotiate-button" id="negotiate-button" onclick=" ">Negotiate</button> -->
+                </div>
+            </div>
+        </div>
+        <!-- Add more products as needed -->
+        <br>
+        <br>
+        <div class="services-container">
+            <!-- Service 1 -->
+            <div class="service">
+                <img src="img/FA2.png" alt="Finance Assistance Scheme Logo">
+                <h2>Finance Assistance Scheme</h2>
+            </div>
+            
+            <!-- Service 2 -->
+            <div class="service">
+                <img src="img/19.png" alt="Branding Scheme Logo">
+                <h2>Branding Scheme</h2>
+            </div>
+            
+            <!-- Service 3 -->
+            <div class="service">
+                <img src="img/bulb2.png" alt="Skill Development Scheme Logo">
+                <h2>Skill Development Scheme</h2>
+            </div>
+
+            <div class="service">
+                <img src="img/vendor.png" alt="Skill Development Scheme Logo">
+                <h2>Support Vendor Scheme</h2>
+            </div>
+
+            
+            <!-- Add more services as needed -->
+        </div>
+        <br>
+
+        <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1718454.1672275087!2d72.55699439374996!3d32.7297419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391e8485def06d6d%3A0x1fc45175e6c5b66e!2sHandloom%20Outlet%20of%20J%26K%20Handloom%20Development%20Corporation!5e0!3m2!1sen!2sin!4v1695069477187!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+       <br>
+       <div class="container2">
+        <div class="news-container">
+            <h2 class="poronews">News Section</h2>
+            <div id="rss-feed">
+                <!-- RSS content will be inserted here -->
+            </div>
+            <!-- Add your news content here -->
+        </div>
+        <div class="emergency-container">
+            <h2 class="poronews">Emergency Helpline</h2>
+            <br>
+            <ul class="emergency-contact-list">
+                <li>
+                    <div class="emergency-contact-icon">📞</div>
+                    <a href="tel:+911234567890" class="phone-number-link">+91 1234 567 890</a>
+                </li>
+                <li>
+                    <div class="emergency-contact-icon">🚒</div>
+                    <p class="poroe">Fire Services :</p> <a href="tel:+91123" class="phone-number-link">123</a>
+                </li>
+                <li>
+                    <div class="emergency-contact-icon">🚑</div>
+                    <p class="poroe">Medical Services :</p> <a href="tel:+91123" class="phone-number-link">123</a>
+                </li>
+                <li>
+                    <div class="emergency-contact-icon">🚔</div>
+                    <p class="poroe">Police :</p> <a href="tel:+91123" class="phone-number-link">123</a>
+                </li>
+                <!-- Add more emergency contact details as needed -->
+            </ul>
+        </div>
+    </div>
+    <section id="poroga">
+    <div class="gallery-section">
+        <h2 class="porog">Gallery Section</h2>
+        <br>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="img/k1.jpg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="img/k2.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="img/k3.jpg" alt="Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="img/k4.jpg" alt="Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="img/k5.jpg" alt="Image 5">
+            </div>
+            <div class="gallery-item">
+                <img src="img/k6.jpg" alt="Image 6">
+            </div>
+            <!-- Add more gallery items as needed -->
+        </div>
+    </div>
+</section>
+        <div class="faq-container">
+            <h3 onclick="toggleFAQ(1)">FAQ about Product</h3>
+            <div class="faq-content" id="faq-1">
+                <h4>Q: What is this product?</h4>
+                <p>A: This product is...</p>
+                <h4>Q: How is it made?</h4>
+                <p>A: It is made using...</p>
+            </div>
+            <h3 onclick="toggleFAQ(2)">FAQ about Buying</h3>
+            <div class="faq-content" id="faq-2">
+                <h4>Q: How can I buy?</h4>
+                <p>A: You can buy...</p>
+                <h4>Q: What payment methods are accepted?</h4>
+                <p>A: We accept...</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact">
+        <div class="container5">
+          <img src="img/ONE DISTRICT ONE PRODUCT logo jandk.png" alt="logo1" class="logo1">
+          <br>
+          <br>
+    
+          
+          <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <input type="submit" value="Send Message" class="cta-button">
+          </form>
+        </div>
+      </section>
+    <script>
+
+
+        function toggleFAQ(id) {
+            const faqContent = document.getElementById(`faq-${id}`);
+            faqContent.style.display = faqContent.style.display === 'block' ? 'none' : 'block';
+        }
+        // script.js
+
+// Default language is English
+ // JavaScript for closing the alert
+ function closeAlert() {
+            const alertSection = document.querySelector('.alert-section');
+            alertSection.style.display = 'none';
+        }
+
+
+// JavaScript for banner slider
+let currentSlide = 0;
+        const slides = document.querySelectorAll('.banner-slide');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.style.display = 'block';
+                } else {
+                    slide.style.display = 'none';
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide++;
+            if (currentSlide >= slides.length) {
+                currentSlide = 0;
+            }
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide--;
+            if (currentSlide < 0) {
+                currentSlide = slides.length - 1;
+            }
+            showSlide(currentSlide);
+        }
+
+        // Automatic sliding
+        let autoSlideInterval;
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds (5000 milliseconds)
+        }
+
+        function stopAutoSlide() {
+            clearInterval(autoSlideInterval);
+        }
+
+        // Initial display of the first slide and start automatic sliding
+        showSlide(currentSlide);
+        startAutoSlide();
+
+// RSS feed URL
+const rssFeedUrl = 'https://hindi.oneindia.com/rss/feeds/hindi-jammu-and-kashmir-fb.xml';
+
+// Function to fetch and parse RSS feed
+async function fetchAndDisplayRSS() {
+            try {
+                const response = await fetch(rssFeedUrl);
+                const xmlText = await response.text();
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+
+                // Extract and display RSS feed items
+                const items = xmlDoc.querySelectorAll('item');
+                const rssFeedDiv = document.getElementById('rss-feed');
+
+                items.forEach(item => {
+                    const title = item.querySelector('title').textContent;
+                    const link = item.querySelector('link').textContent;
+
+                    const feedItem = document.createElement('p');
+                    feedItem.innerHTML = `<a href="${link}" target="_blank">${title}</a>`;
+                    rssFeedDiv.appendChild(feedItem);
+                });
+            } catch (error) {
+                console.error('Error fetching or parsing RSS feed:', error);
+            }
+        }
+
+        // Call the function to fetch and display the RSS feed
+        fetchAndDisplayRSS();
+
+
+
+    </script>
+</body>
+<footer>
+    <p>&copy; 2023 Government of Jammu & Kashmir. All Rights Reserved.</p>
+    <br>
+        <div class="government-details">
+            <p>Government of Jammu and Kashmir</p>
+            <p>Address: Jammu & Srinagar</p>
+        </div>
+        <br>
+            <div class="visitor-meter">
+                Total Visitors: <span id="visitor-count">0</span>
+            </div>
+
+        <script>
+             // JavaScript to increment the visitor count (for demonstration purposes)
+          let visitorCount = 0;
+        const visitorCountElement = document.getElementById('visitor-count');
+
+        function incrementVisitorCount() {
+            visitorCount++;
+            visitorCountElement.textContent = visitorCount;
+        }
+
+        // Simulate incrementing the count every 5 seconds (for demonstration purposes)
+        setInterval(incrementVisitorCount, 30000);
+
+  // Get references to the Product and Contact navigation items
+  const productLink = document.getElementById("product-link");
+  const contactLink = document.getElementById("contact-link");
+
+  // Add click event listeners to toggle the "blinking" class
+  productLink.addEventListener("click", function () {
+    // Toggle the "blinking" class on the Product link
+    productLink.classList.toggle("blinking");
+
+    // Remove the "blinking" class from the Contact link if it's present
+    contactLink.classList.remove("blinking");
+  });
+
+  contactLink.addEventListener("click", function () {
+    // Toggle the "blinking" class on the Contact link
+    contactLink.classList.toggle("blinking");
+
+    // Remove the "blinking" class from the Product link if it's present
+    productLink.classList.remove("blinking");
+  });
+
+        </script>
+</footer>
+</html>

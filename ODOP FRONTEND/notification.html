@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODOP Jammu & Kashmir Admin Portal</title>
+    <style>
+        /* Your responsive CSS styles here */
+        body {
+            background-image: url(img/kkl.jpg);
+    background-size: cover; /* Adjust this property as needed */
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .notification {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .btn {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-delete {
+            background-color: #FF0000;
+        }
+    </style>
+</head>
+<header>
+    <h1>Admin Portal - ODOP, Jammu & Kashmir</h1>
+</header>
+<body>
+    
+    <div class="container">
+        <h2>Notifications</h2>
+        <div id="notification-list">
+            <!-- Notifications will be dynamically added here -->
+        </div>
+        <button id="mark-read" class="btn">Mark All as Read</button>
+        <button id="delete-all" class="btn btn-delete">Delete All</button>
+    </div>
+
+    <script>
+        // Sample notifications data (you should replace this with actual data)
+        const notifications = [
+            { id: 1, text: "Notification 1", read: false },
+            { id: 2, text: "Notification 2", read: true },
+            { id: 3, text: "Notification 3", read: false }
+        ];
+
+        // Function to render notifications
+        function renderNotifications() {
+            const notificationList = document.getElementById("notification-list");
+            notificationList.innerHTML = "";
+
+            notifications.forEach(notification => {
+                const div = document.createElement("div");
+                div.className = "notification";
+                div.innerHTML = `<p>${notification.text} ${notification.read ? "(Read)" : "(Unread)"}</p>`;
+                notificationList.appendChild(div);
+            });
+        }
+
+        // Function to mark all notifications as read
+        document.getElementById("mark-read").addEventListener("click", () => {
+            notifications.forEach(notification => {
+                notification.read = true;
+            });
+            renderNotifications();
+        });
+
+        // Function to delete all notifications
+        document.getElementById("delete-all").addEventListener("click", () => {
+            notifications.length = 0;
+            renderNotifications();
+        });
+
+        // Initial rendering of notifications
+        renderNotifications();
+    </script>
+</body>
+</html>

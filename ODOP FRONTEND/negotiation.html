@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODOP Jammu & Kashmir Admin Portal - Negotiation</title>
+    <style>
+        /* Your responsive CSS styles here */
+        body {
+            background-image: url(img/kkl.jpg);
+    background-size: cover; /* Adjust this property as needed */
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-request {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .customer-profile {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .btn {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-accept {
+            background-color: #4CAF50;
+        }
+
+        .btn-decline {
+            background-color: #FF0000;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            .product-request {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<header>
+    <h1>Admin Portal - ODOP, Jammu & Kashmir</h1>
+</header>
+<body>
+    <div class="container">
+        <h2>Negotiation Requests</h2>
+        <div id="requests-list">
+            <!-- Product requests will be dynamically added here -->
+        </div>
+        <h2>Customer Profile</h2>
+        <div id="customer-profile" class="customer-profile">
+            <!-- Customer profile will be displayed here -->
+        </div>
+    </div>
+
+    <script>
+        // Sample product negotiation requests (you should replace this with actual data)
+        const requests = [
+            { id: 1, product: "Product A", price: 100, customerName: "Customer 1" },
+            { id: 2, product: "Product B", price: 150, customerName: "Customer 2" },
+            { id: 3, product: "Product C", price: 80, customerName: "Customer 3" }
+        ];
+
+        // Function to render product requests
+        function renderRequests() {
+            const requestsList = document.getElementById("requests-list");
+            requestsList.innerHTML = "";
+
+            requests.forEach(request => {
+                const div = document.createElement("div");
+                div.className = "product-request";
+                div.innerHTML = `
+                    <p>${request.product} - Price: ${request.price}</p>
+                    <button class="btn btn-accept" onclick="acceptRequest(${request.id})">Accept</button>
+                    <button class="btn btn-decline" onclick="declineRequest(${request.id})">Decline</button>
+                    <button class="btn" onclick="showCustomerProfile('${request.customerName}')">View Profile</button>
+                `;
+                requestsList.appendChild(div);
+            });
+        }
+
+        // Function to accept a request
+        function acceptRequest(requestId) {
+            // Handle the logic to accept the request (e.g., send to the server)
+            // Remove the accepted request from the list
+            requests.splice(requests.findIndex(request => request.id === requestId), 1);
+            renderRequests();
+        }
+
+        // Function to decline a request
+        function declineRequest(requestId) {
+            // Handle the logic to decline the request (e.g., send to the server)
+            // Remove the declined request from the list
+            requests.splice(requests.findIndex(request => request.id === requestId), 1);
+            renderRequests();
+        }
+
+        // Function to display customer profile
+        function showCustomerProfile(customerName) {
+            const customerProfile = document.getElementById("customer-profile");
+            customerProfile.innerHTML = `<p>Customer Name: ${customerName}</p>`;
+            customerProfile.style.display = "block";
+        }
+
+        // Initial rendering of product requests
+        renderRequests();
+    </script>
+</body>
+</html>

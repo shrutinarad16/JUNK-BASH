@@ -1,0 +1,197 @@
+body {
+    background-image: url(img/kkl.jpg);
+    background-size: cover; /* Adjust this property as needed */
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    /* background-color: #f5f5f5; */
+  font-family: Arial, sans-serif;
+  /* background-color: #f2f2f2; */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+/* Main Styles */
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Styles */
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Buttons and File Inputs Styles */
+input[type="file"] {
+  display: none;
+}
+
+button[data-action="upload"],
+label.upload-button {
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+button[data-action="upload"]:hover,
+label.upload-button:hover {
+  background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Styles for the Settings Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px; /* Add some spacing to the right of the dropdown */
+}
+
+.dropdown .dropbtn {
+  padding: 8px 16px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Define styles for the button */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Add a hover effect */
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 767px) {
+  /* Adjust styles for mobile devices */
+  header h1 {
+    font-size: 24px;
+  }
+
+  nav ul li {
+    margin-right: 10px;
+  }
+
+  /* Add more mobile-specific styles as needed */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Adjust styles for tablets */
+  header h1 {
+    font-size: 30px;
+  }
+
+  nav ul li {
+    margin-right: 15px;
+  }
+
+  /* Add more tablet-specific styles as needed */
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* Adjust styles for larger tablets and smaller desktops */
+  header h1 {
+    font-size: 32px;
+  }
+
+  nav ul li {
+    margin-right: 20px;
+  }
+
+  /* Add more styles for larger tablets and smaller desktops as needed */
+}
+
+/* Add more media queries and adjust styles for larger desktops and laptops as needed */

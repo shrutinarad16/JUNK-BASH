@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ODOP Jammu and Kashmir</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <form id="login-form">
+            <h1>Login</h1>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <div class="options">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#" id="forgot-password">Forgot Password?</a>
+            </div>
+            <button type="submit">Login</button>
+            <!-- <p>Don't have an account? <a href="#" id="register-link">Register now</a></p> -->
+            <!-- ... (inside the "Login" Form) ... -->
+<p>Don't have an account? <a href="#" id="register-link">Register now</a> or <a href="#" id="register-link-seller">Register as Seller</a></p>
+
+        </form>
+
+        <form id="forgot-password-form" class="hidden">
+            <h1>Forgot Password</h1>
+            <p>Enter your email address to reset your password.</p>
+            <input type="email" id="reset-email" placeholder="Email" required>
+            <button type="submit">Reset Password</button>
+            <a href="#" id="back-to-login">Back to Login</a>
+        </form>
+
+        <form id="register-form" class="hidden">
+            <h1>Register</h1>
+            <input type="text" id="new-username" placeholder="Username" required>
+            <input type="email" id="new-email" placeholder="Email" required>
+            <input type="password" id="new-password" placeholder="Password" required>
+            <button type="submit">Register</button>
+            <a href="#" id="back-to-login">Back to Login</a>
+        </form>
+        <form id="seller-register-form" class="hidden">
+            <h1>Register as Seller</h1>
+            <input type="text" id="seller-name" placeholder="Seller Name" required>
+            <input type="text" id="seller-id" placeholder="Seller ID" required>
+            <input type="email" id="seller-email" placeholder="Email" required>
+            <input type="password" id="seller-password" placeholder="Password" required>
+            <input type="tel" id="seller-phone" placeholder="Phone Number" required>
+            <input type="text" id="seller-aadhar" placeholder="Aadhar Card Number" required>
+            <input type="file" id="seller-aadhar-upload" accept=".pdf, .jpg, .jpeg, .png" required>
+            <button type="submit">Register as Seller</button>
+            <a href="#" id="back-to-login">Back to Login</a>
+        </form>
+        
+
+
+    </div>
+    
+    <script src="login.js"></script>
+</body>
+</html>

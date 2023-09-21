@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <header>
+        <h1>Product List</h1>
+    </header>
+    <main>
+        <section class="products">
+            <div class="product">
+                <img src="product1.jpg" alt="Product 1">
+                <h2>Product 1</h2>
+                <p>Price: $10.00</p>
+                <button class="add-to-cart" data-product="Product 1" data-price="10.00">Add to Cart</button>
+            </div>
+            <!-- Add more products here -->
+        </section>
+        <section class="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be displayed here dynamically -->
+            </div>
+            <div class="cart-total">
+                <p>Total: $<span id="cart-total">0.00</span></p>
+                <button id="checkout-button" onclick="location.href='payment.html'">Checkout</button>
+            </div>
+        </section>
+    </main>
+    <script src="cartscript.js"></script>
+</body>
+</html>

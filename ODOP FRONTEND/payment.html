@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <title>Payment Page</title>
+    <style>
+        /* payment.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Main styles */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.payment-options {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.payment-options h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.payment-options label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.payment-options input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Checkout button styles */
+#checkout-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#checkout-button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Payment Options</h1>
+    </header>
+    <main>
+        <section class="payment-options">
+            <h2>Select Payment Method</h2>
+            <label>
+                <input type="radio" name="payment-method" value="credit-card">
+                Credit Card
+            </label>
+            <label>
+                <input type="radio" name="payment-method" value="paypal">
+                PayPal
+            </label>
+            <label>
+                <input type="radio" name="payment-method" value="stripe">
+                Stripe
+            </label>
+            <!-- Add more payment options here -->
+        </section>
+    </main>
+    <script>
+        // JavaScript code for connecting with the Checkout button
+        const checkoutButton = document.getElementById('checkout-button');
+        checkoutButton.addEventListener('click', () => {
+            const selectedPaymentMethod = document.querySelector('input[name="payment-method"]:checked');
+
+            if (selectedPaymentMethod) {
+                const paymentMethod = selectedPaymentMethod.value;
+
+                // You can perform actions based on the selected payment method
+                switch (paymentMethod) {
+                    case 'credit-card':
+                        // Implement credit card payment logic
+                        alert('Redirecting to credit card payment page...');
+                        break;
+                    case 'paypal':
+                        // Implement PayPal payment logic
+                        alert('Redirecting to PayPal payment...');
+                        break;
+                    case 'stripe':
+                        // Implement Stripe payment logic
+                        alert('Redirecting to Stripe payment...');
+                        break;
+                    default:
+                        alert('Please select a payment method.');
+                }
+            } else {
+                alert('Please select a payment method.');
+            }
+        });
+    </script>
+</body>
+</html>

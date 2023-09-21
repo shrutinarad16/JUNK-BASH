@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profilepage.css">
+    <title>My Profile</title>
+</head>
+<header>
+    <img src="img/ONE DISTRICT ONE PRODUCT transsp big.png" alt="logo" class="logo">
+    <h4>My Profile</h4>
+</header>
+<body>
+    <main>
+        <section class="profile">
+            <div class="profile-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" value="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="mobile-number">Mobile Number:</label>
+                    <input type="tel" id="mobile-number" value="123-456-7890">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" value="youremail@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" value="123 Main Street">
+                </div>
+                <div class="form-group">
+                    <label for="state">State:</label>
+                    <select id="state">
+                        <option value="ny">New York</option>
+                        <option value="ca">California</option>
+                        <option value="tx">Texas</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+                <button id="update-profile">Update</button>
+            </div>
+            <div class="profile-picture">
+                <img id="profile-image" src="default-profile.jpg" alt="Profile Picture">
+                <input type="file" id="profile-picture-input" accept="image/*">
+                <button id="update-profile-picture">Change Picture</button>
+            </div>
+        </section>
+    </main>
+    <script src="profilepage.js"></script>
+</body>
+</html>

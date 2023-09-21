@@ -1,4 +1,6 @@
 # JUNK-BASH
+## Official Website of ODOP Jammu & Kashmir
+[ODOP Jammu&Kashmir](http://odopjk.netlify.app)
 ## Tekathon 2.0
 ## Internal Hackathon for Smart India Hackathon
 # Details
@@ -54,6 +56,4 @@ will be **rewarded** some money. This money is gained from **Margin accomplished
 ## Prototype Design
 [Figma Design](https://www.figma.com/file/fW9C1THTrjKOtYpVpWPa8q/JUNK_BASH?type=design&node-id=1%3A2&mode=design&t=ZmdkCRllkMztsFOc-1)
 
-## Official Website of ODOP Jammu & Kashmir
-[ODOP Jammu&Kashmir](http://odopjk.netlify.app)
 

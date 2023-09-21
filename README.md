@@ -52,5 +52,5 @@ will be **rewarded** some money. This money is gained from **Margin accomplished
 4) Security: Blockchain
 
 ## Prototype Design
-[Figma Design] (https://www.figma.com/file/fW9C1THTrjKOtYpVpWPa8q/JUNK_BASH?type=design&node-id=1%3A2&mode=design&t=ZmdkCRllkMztsFOc-1)
+[Figma Design](https://www.figma.com/file/fW9C1THTrjKOtYpVpWPa8q/JUNK_BASH?type=design&node-id=1%3A2&mode=design&t=ZmdkCRllkMztsFOc-1)
 

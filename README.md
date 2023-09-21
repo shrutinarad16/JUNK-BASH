@@ -25,5 +25,7 @@ these challenges and create opportunities for small enterprises while preserving
 2) Home Screen poses videos that depicts hard work and dedication of workers for their product where their product is symbol of heritage and culture.
 3) Negotiation for best dealing.
 4) Exhibition Display.
-5)User Friendly UI and Navigations.
+5) User Friendly UI and Navigations.
+6) Website service is available all over INDIA for selling and buying products.
+7) Money Transfer can be done with UPI or Blockchain based Currencies
 

@@ -27,5 +27,20 @@ these challenges and create opportunities for small enterprises while preserving
 4) Exhibition Display.
 5) User Friendly UI and Navigations.
 6) Website service is available all over INDIA for selling and buying products.
-7) Money Transfer can be done with UPI or Blockchain based Currencies
+7) Money Transfer can be done with UPI or Blockchain based Currencies.
+8) BlockChain ensures the remedy from Fraud. (In case any scam happened by Dealer or Customer; it will hammer penalty on Scammer by 15% of Original Price of Product.
+9) Satisfaction will reflects in terms of darkening of Green Light on Profile while Scamming will reflects in terms of darkening of Red Light on Profile. This will builds trust and strong bond between Costumers and Dealers.
+10) Privacy and Security is on top priority. Displaying number and Personal Information will be private or public is upto on user.
+11) 3R Mantra (Reduce, Reuse, Recycle) is added for effective management of waste and it’s utilization for economic growth.
+12) Buyers, Sellers Data is present on webpage that depicts their activity of selling and buying things; positive/negative results displays on their profile.
+13) Displays the accessory products of area including their production places and rates.
+14) Displays the information of available centers of product in area.
+15) Provides all over information of District including literacy rates, population, weather, etc.
+16) Negotiation is added for Reuse Product Option, best dealing will be done between dealer and customer and some percentage margin is sent to Government. (No need to input money by government)
+17) Reduce is technique that encourages customers to produce organic products from waste with proper guidelines and provide platform for
+selling organic products; that will enhance the fertility of soil and decreases the production of chemical fertilizers.
+18) Customers those who have uploaded photos with proper management of waste and their utilization by manufacturing organic products
+will be rewarded some money. This money is gained from Margin accomplished by Reuse Product (Option present in Buy & Sell).
+19) Admin-Sellor Tendor Bond
+20) Toggle Language
 

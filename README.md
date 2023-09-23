@@ -49,6 +49,8 @@ will be **rewarded** some money. This money is gained from **Margin accomplished
 19) Admin-Sellor **Tendor** Bond
 20) Toggle Language
 21) **No intermediate site**s like amazon, flipkart. User and Admin can directly communicate for buying and selling purposes.
+22) It is Website for Small dealers of Jammu and Kashmir, whom we can provide platform to sell the things. So, only Jammu and Kashmir individual is able to be Vendor. This is accomplished by uploading adhar card details. The mention address will reflects him/her origional place.
+23) Fraud detection using Blockchain. Penalty is assigned. A smart contract is been created in between vendor and customer which has 15% amount of product from both individual. Wheneevr fraud is hammered then this money will transfer to seeker's amount. If fraud done by vendor (like, delivery is not reached, etc) then penalty is charged and this penalty is of 15% of product which will be transfer to customer's account, vice vera.
 
 ## Tech Stack
 1) Frontend: HTML, CSS, Javascript

@@ -1,11 +1,12 @@
 # JUNK-BASH
+# Project: One District One Product
 ## 👉 Official Website For ODOP Jammu & Kashmir
 [ODOP Jammu&Kashmir](http://odopjk.netlify.app)
 ## Prototype Design
 [Figma Design](https://www.figma.com/file/fW9C1THTrjKOtYpVpWPa8q/JUNK_BASH?type=design&node-id=1%3A2&mode=design&t=ZmdkCRllkMztsFOc-1)
 ## Tekathon 2.0
 ## Internal Hackathon for Smart India Hackathon
-# Details
+# Details of Project
 
 ### Domain: Heritage & Culture
 ### PSID: SIH1355
